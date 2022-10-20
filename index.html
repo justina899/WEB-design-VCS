@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <body>
     <h1>Main heading</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae nesciunt id, nobis fugit iste vitae
@@ -16,9 +21,18 @@
     </p>
     <h1>Tik mokslas yra arčiausiai tiesos</h1>
     <h3>Tiesos paieškos</h3>
-    <p>Mykolas jau apie valandą žiūrėjo pro savo langą. Ant jo stalo, šalia <i>Nature, New Scientist</i> ir kitų mokslo žurnalų gulėjo ir jo mėgstamiausia Carl Sagan knygą <i>Demonų apsėstas pasaulis: mokslas kaip žvakė tamsoje.</i> Tai buvo mėgstamiausia Mykolo knyga dar nuo universiteto laikų. Šalia gulėjo gerokai nutrinta, odiniais viršeliais užrašinė. Joje matėsi didelėmis spausdintinėmis raidėmis išraityti žodžiai <b>Sek paskui tą, kuris ieško tiesos, bet kaip nuo maro bėk nuo to, kuris sakosi ją tūrįs,</b> - yra šalia neaiškiai, smulkesniu šriftu pakeverzota, kad taip pasakęs Sokratas.</p>
+    <p>Mykolas jau apie valandą žiūrėjo pro savo langą. Ant jo stalo, šalia <i>Nature, New Scientist</i> ir kitų mokslo
+        žurnalų gulėjo ir jo mėgstamiausia Carl Sagan knygą <i>Demonų apsėstas pasaulis: mokslas kaip žvakė tamsoje.</i>
+        Tai buvo mėgstamiausia Mykolo knyga dar nuo universiteto laikų. Šalia gulėjo gerokai nutrinta, odiniais
+        viršeliais užrašinė. Joje matėsi didelėmis spausdintinėmis raidėmis išraityti žodžiai <b>Sek paskui tą, kuris
+            ieško tiesos, bet kaip nuo maro bėk nuo to, kuris sakosi ją tūrįs,</b> - yra šalia neaiškiai, smulkesniu
+        šriftu pakeverzota, kad taip pasakęs Sokratas.</p>
 
-    </p>Pastaraisiais metais daugiausia laiko jis praleido sėdėdamas čia, prie savo darbo kompiuterio, šalia plakato su Albert Einštein citata "Žmonių kvailumas kaip ir Visata yra beribis. Tik dėl visatos nesu tikras.". Nors daugelis manė, kad jo kritika pseudomokslams ir straipsnių publikavimas <span title="The Comettee for the Scientific Investigation of Claims of Paranormal"> CSICOP</span> svetainėje yra nuostabus pasiekimas, tačiau Mykolas manė, kad gali kur kas daugiau.
+    </p>Pastaraisiais metais daugiausia laiko jis praleido sėdėdamas čia, prie savo darbo kompiuterio, šalia plakato su
+    Albert Einštein citata "Žmonių kvailumas kaip ir Visata yra beribis. Tik dėl visatos nesu tikras.". Nors daugelis
+    manė, kad jo kritika pseudomokslams ir straipsnių publikavimas <span
+        title="The Comettee for the Scientific Investigation of Claims of Paranormal"> CSICOP</span> svetainėje yra
+    nuostabus pasiekimas, tačiau Mykolas manė, kad gali kur kas daugiau.
     </p>
 
     <h1>Paprastas omletas</h1>
@@ -36,20 +50,63 @@
         <li>Kepti sviestu pateptoje keptuveje ant nedideles ugnies</li>
         <li>Iskeptus sudeti i lekste</li>
         <li>Uzpilti istirpintu sviestu</li>
-    </ul>
-    <p>
-    <form action="/action_page.php">
-        <label for="fname">Vardas:</label><br>
-        <input type="text" id="fname" name="fname" value=""><br>
-        <label for="lname">Pavarde:</label><br>
-        <input type="text" id="lname" name="lname" value=""><br><br>
-      </form> 
-      <form action="/action_page.php">
-        <label for="list">Kaip suzinojote apie mus:</label>
-        <select name="options" id="one">
-          <option value="google">Google</option>
-        </select>
-    </p>
+        </ul>
+        <p>
+        <form action="/action_page.php">
+            <fieldset>
+                <legend>Jusu informacija</legend>
+                <label for="fname">Vardas:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="lname">Pavarde:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+            </fieldset>
+        </form>
+        <form action="/action_page.php">
+            <fieldset>
+                <legend>Klausimai</legend>
+                <label for="list">Kaip suzinojote apie mus:</label>
+                <select name="options" id="one">
+                    <option value="google">Google</option>
+                </select>
+                </p>
+                <p style="margin: 0px;">Apsilankysite vel?</p>
+                <form>
+                      <input type="radio" id="taip" name="ats" value="taip">
+                      <label for="taip">Taip</label>
+                      <input type="radio" id="ne" name="ats" value="ne">
+                      <label for="ne">Ne</label>
+                      <input type="radio" id="galbut" name="ats" value="galbut">
+                      <label for="galbut">Galbut</label><br><br>
+                </form>
+                <p style="margin: 0px;">Ka manote apie kursa?</p>
+                <form action="/action_page.php">
+                    <textarea style="font-family:'Courier New'" name="message" rows="10"
+                        cols="120">Rasykite viska, ka galvojate</textarea>
+                    <br><br>
+                </form>
+                <p style="margin: 0px;">Pazymekite programavimo/zymejimo kalbas, su kuriomis esate susipazine:</p>
+                <form action="/action_page.php" method="get">
+                    <input type="checkbox" name="first" value="C#">
+                    <label for="first"> C#</label>
+                    <input type="checkbox" name="second" value="JAVA">
+                    <label for="second"> JAVA</label>
+                    <input type="checkbox" name="third" value="PHP" checked>
+                    <label for="third"> PHP</label><br>
+                    <input type="checkbox" name="fourth" value="HTML">
+                    <label for="fourth"> HTML</label>
+                    <input type="checkbox" name="fifth" value="CSS">
+                    <label for="fifth"> CSS</label>
+                    <input type="checkbox" name="sixth" value="JavaScript" checked>
+                    <label for="sixth"> JavaScript</label><br>
+                    <input type="checkbox" name="seventh" value="Python">
+                    <label for="seventh"> Python</label>
+                    <input type="checkbox" name="eighth" value="Ruby">
+                    <label for="eighth"> Ruby</label><br><br>
+                    <input type="submit" value="Siusti">
+                </form>
+            </fieldset>
+
+        </form>
 </body>
 
 </html>
